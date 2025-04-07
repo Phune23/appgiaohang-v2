@@ -26,7 +26,7 @@ class _SettingsAdminScreenState extends State<SettingsAdminScreen> {
           content: const Text('Bạn có chắc chắn muốn đăng xuất?'),
           actions: [
             TextButton(
-              child: const Text('Hủy'),
+              child: const Text('Hủy!'),
 
               onPressed: () => Navigator.of(context).pop(),
             ),
