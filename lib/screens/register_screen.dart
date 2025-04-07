@@ -36,7 +36,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       if (response.statusCode == 200) {
         setState(() => _isOTPSent = true);
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('OTP sent to your email')),
+          const SnackBar(content: Text('OTP sent to your email!!')),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(

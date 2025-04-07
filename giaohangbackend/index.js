@@ -15,7 +15,12 @@ import agoraRoutes from './routes/agora.js';
 import { Server } from 'socket.io';
 import { createServer } from 'http';
 import admin from 'firebase-admin';
-import serviceAccount from './key/appgiaohangonline-firebase-adminsdk.json' assert { type: "json" };
+
+//Thay đổi 
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+const serviceAccount = require('./key/appgiaohangonline-firebase-adminsdk.json');
 
 // Initialize Firebase Admin before other initializations
 admin.initializeApp({
