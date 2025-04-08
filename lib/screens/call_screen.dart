@@ -39,7 +39,7 @@ class _CallScreenState extends State<CallScreen> {
       
       // Validate token and channel name first
       if (widget.channelName.isEmpty || widget.token.isEmpty) {
-        throw Exception('Invalid channel name or token');
+        throw Exception('Invalid channel name or token!');
       }
 
       await _callService.initializeAgora();
